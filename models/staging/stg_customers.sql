@@ -6,5 +6,5 @@ select
     last_name,
     email,
     created_at
-from {{ source('public', 'customers') }}
+from {{ source('raw', 'customers') }}
 where customer_id is not null
