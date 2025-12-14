@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Cleaned customers data from raw source
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
